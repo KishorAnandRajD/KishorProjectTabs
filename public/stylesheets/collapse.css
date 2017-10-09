@@ -1,0 +1,74 @@
+.react-sanfona {
+
+  border-radius: 3px;
+  margin-bottom: 70px;
+}
+
+.react-sanfona-item-title {
+  background-color: #fafafa;
+  border-top: 1px solid #ccc;
+  color: #333;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: background-color .3s;
+}
+
+.react-sanfona-item-expanded  {
+  background-color: #03a9f4;
+  color: #fff;
+
+  .title-done-btn {
+      display: inline-block;
+      float: right;
+      color: #000;
+  }
+}
+
+.react-sanfona-item-body-wrapper {
+    color: #666;
+    padding: 20px;
+    position: relative;
+
+    &:hover .tooltip {
+      opacity: 1;
+    }
+
+}
+
+.react-sanfona-item {
+  &-title {
+    background-color: #fafafa;
+    border-top: 1px solid #ccc;
+    color: #333;
+    padding: 20px;
+    text-transform: uppercase;
+    transition: background-color .3s;
+  }
+
+  &:first-child &-title {
+    border-top: none;
+  }
+
+  &-expanded &-title {
+    background-color: #03a9f4;
+    color: #fff;
+
+    .title-done-btn {
+        display: inline-block;
+        float: right;
+        color: #000;
+    }
+  }
+
+  &
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .title-done-btn {
+      display: none;
+  }
+
+}
