@@ -30,6 +30,10 @@ class SimpleTabs extends Component{
   }
 
   render(){
+    // <Tabs.Panel title='Tab #5: Form Show'>
+    //   <h2><PostsShow/></h2>
+    // </Tabs.Panel>
+    
     return(
       <Tabs tabActive={1} onBeforeChange={this.onBeforeChangeinTab} onAfterChange={this.onAfterChangeinTab}>
         <Tabs.Panel title='Tab #1: YouTubeApp'>
@@ -44,9 +48,7 @@ class SimpleTabs extends Component{
         <Tabs.Panel title='Tab #4: New Form'>
           <h2><PostsNew custommethod={this.modifyActiveTAB}></PostsNew></h2>
         </Tabs.Panel>
-        <Tabs.Panel title='Tab #5: Form Show'>
-          <h2><PostsShow/></h2>
-        </Tabs.Panel>
+
       </Tabs>
     );
   }

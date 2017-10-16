@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import {Accordion,AccordionItem} from 'react-sanfona';
 //require('../scss/collapsiblesanfona.scss');
 //require('normalize.css');
+import PostsIndex from './form/components/posts_index';
 
 class CollapsableSanfona extends Component{
 
@@ -15,14 +16,16 @@ onAccordianItemClose(item){
 
   render(){
     return(
-        <Accordion allowMultiple={true}>
+        <Accordion allowMultiple={true} >
   				{[1, 2, 3, 4, 5].map((item) => {
   					return (
   						<AccordionItem title={`Item ${ item }`} slug={item} key={item}
               onExpand={this.onAccordianItemExpand} onClose={this.onAccordianItemClose}>
   							<div>
   								{`Item ${ item } content`}
+                  {item===1?<PostsIndex/>:null}
   								{item === 3 ? <p><img src="https://cloud.githubusercontent.com/assets/38787/8015584/2883817e-0bda-11e5-9662-b7daf40e8c27.gif" /></p> : null}
+
   							</div>
   						</AccordionItem>
   					);

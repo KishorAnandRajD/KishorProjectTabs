@@ -4,6 +4,8 @@ import {  Navbar, NavItem, NavDropdown, MenuItem, Nav } from 'react-bootstrap';
 import BellIcon from 'react-icons/lib/ti/bell';
 import HelpIcon from 'react-icons/lib/md/help';
 
+import './css/navbar.css';
+
 class Navibar extends Component{
 
   onClickNavItem1(event){
@@ -22,15 +24,16 @@ onClickHelpIcon(){
 
   render(){
     return(
-      <Navbar fluid inverse  >
+      <Navbar  inverse >
      <Navbar.Header>
        <Navbar.Brand>
-         <a>Lab</a>
+         <a>Home</a>
        </Navbar.Brand>
      </Navbar.Header>
      <Nav >
        <NavItem eventKey={1}  onClick={this.onClickNavItem1}>Link</NavItem>
        <NavItem eventKey={2} href="#" onClick={this.onClickNavItem2}>Link</NavItem>
+
        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
          <MenuItem eventKey={3.1} onClick={this.onClickMenuItemAction}>Action</MenuItem>
          <MenuItem eventKey={3.2}>Another action</MenuItem>
@@ -38,8 +41,9 @@ onClickHelpIcon(){
          <MenuItem divider />
          <MenuItem eventKey={3.4}>Separated link</MenuItem>
        </NavDropdown>
-       <NavItem eventKey={4}><BellIcon/></NavItem>
-       <NavItem eventKey={5} onClick={this.onClickHelpIcon}><HelpIcon/></NavItem>
+
+       <NavItem eventKey={4}><div className="iconstyle"><BellIcon/></div></NavItem>
+       <NavItem eventKey={5} onClick={this.onClickHelpIcon}><div className="iconstyle"><HelpIcon/></div></NavItem>
      </Nav>
 
    </Navbar>
