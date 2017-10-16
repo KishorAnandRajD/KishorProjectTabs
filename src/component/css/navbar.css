@@ -1,0 +1,12 @@
+.navbardesign {
+  background-color: #d3e4ff;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid rgba(255, 255, 255, 0);
+  border-right: 5px solid rgba(255, 255, 255, 0);
+  color: #333;
+  padding: 6px;
+  height: 100%;
+}
+.iconstyle {
+  font-size: 25px;
+}

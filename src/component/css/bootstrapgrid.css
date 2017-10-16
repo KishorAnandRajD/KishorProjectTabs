@@ -1,0 +1,40 @@
+/*Kishor - for Left vertical pane*/
+.divleftpane {
+  background-color: #d3e4ff;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid rgba(255, 255, 255, 0);
+  border-right: 5px solid rgba(255, 255, 255, 0);
+  color: #333;
+  padding: 6px;
+  height: 930px;
+  width: 50px;
+}
+
+.divbreadcrumb {
+  background-color: #caea81;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid rgba(255, 255, 255, 0);
+  border-right: 5px solid rgba(255, 255, 255, 0);
+  color: #333;
+  padding: 6px;
+  width: 100%;
+}
+
+.divcenterpane {
+  background-color: #fffcc6;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid rgba(255, 255, 255, 0);
+  border-right: 5px solid rgba(255, 255, 255, 0);
+  color: #333;
+  padding: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  height: 900px;
+  width:100%;
+}
+
+.divcollapsible {
+  background-color: #f4e1e1;
+  height: 930px;
+  width:400px;  
+}
